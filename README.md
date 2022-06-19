@@ -1,0 +1,1 @@
+Página de tributo ao Spock (leonard Nimoy), (página ainda em andamento);

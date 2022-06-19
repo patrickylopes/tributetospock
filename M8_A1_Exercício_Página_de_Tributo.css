@@ -1,0 +1,389 @@
+
+ * {
+    font-family:'Space Mono', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    background-color: #0D160B;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Space Mono', sans-serif;
+    height: 75px;
+}
+
+.header_box nav {
+    padding-right: 20px;               /* ? Como centralizaar a nav, tentei margin-auto e justify-center sem exito ? 
+                                        (deixei um padding right como "solução"! */ 
+}
+
+.header_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 3px;
+}
+
+nav .active li, nav a:hover {
+    color: #E09809;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#BFBDC1;
+}
+
+.about_box {
+    display: flex;
+    flex-direction: column;
+    background-color: #484F90;
+    align-items: center;
+    padding-bottom: 50px;
+    border-bottom: 3px solid  #0D160B;
+    border-left: 3px solid  #0D160B;
+    border-right: 3px solid  #0D160B;
+    width: 1344px;
+}
+
+.title h1 {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.title h2 {
+    display: flex;
+    color: #ffffff;
+    font-size: 22px;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.image_box img {
+    width: 654px;
+}
+
+.about_year p {
+    color: #ffffff;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.about_text {
+    margin-top: 25px;
+    text-align: center;
+    color: #ffffff;
+    padding-left: 75px;
+    padding-right: 75px;
+    line-height: 20px;
+}
+
+.about_text span {
+    font-weight: 700;
+    color: #E09809;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+.gallery_box {
+    background-color: #E09809;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px solid #0D160B;
+    border-left: 3px solid  #0D160B;
+    border-right: 3px solid  #0D160B;
+    width: 1344px;
+}
+
+.pictures_box {
+    display: flex;
+}
+
+.pictures_box img {
+    margin: 10px;
+    height: 444px;
+    border: 2px solid #ffffff;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.timeline_box {
+    background-color: #CB4646;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px solid #0D160B;
+    border-left: 3px solid  #0D160B;
+    border-right: 3px solid  #0D160B;
+    width: 1344px;
+}
+
+.timeline_years_box {
+    padding-bottom: 10px;
+}
+
+.timeline_years .white_rectangle {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    width: 678px;
+    padding-left: 07px;
+    color: #484F90;
+    font-weight: bold;
+}
+
+.timeline_years span {
+    background-color: #E09809;
+    padding: 4px;
+    margin-right: 4px;
+    color: rgb(255, 255, 255);
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+.link_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #484F90;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-left: 3px solid  #0D160B;
+    border-right: 3px solid  #0D160B;
+    width: 1344px;
+}
+
+.link_box p {
+    color: #ffffff;
+}
+
+.link_box a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.link_box .active a, .link_box a:hover {
+    color: #E09809;
+}
+
+footer {
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+    background-color: #0D160B;
+}
+
+.social_media img {
+    width: 40px;
+    margin-top: 13px;
+    margin-left: 5px;
+    margin-right: 5px ;
+}
+
+.copyright p {
+    color: #ffffff;
+}
+
+.copyright a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.copyright .active a, .copyright a:hover {
+    color: #E09809;
+}
+
+
+
+
+@media (max-width: 1290px) {
+
+
+    .about_box, .gallery_box, .link_box, .timeline_box {
+        width: 1090px;
+    }
+
+    .pictures_box img {
+        height: 405px;
+    }
+}
+
+@media (max-width: 1173px) {
+
+    .about_box, .gallery_box, .link_box, .timeline_box {
+        width: 973px;
+    }
+
+    .pictures_box img {
+        height: 375px;
+    }
+}
+
+@media (max-width: 1023px) {
+
+    .about_box, .gallery_box, .link_box, .timeline_box {
+        width: 823px;
+    }
+
+    .pictures_box img {
+        height: 315px;
+    }
+}
+
+@media (max-width: 845px) {
+
+    .image_box img {
+        width: 570px;
+    }
+
+    .about_box, .gallery_box, .link_box, .timeline_box {
+        width: 645px;
+    }
+
+    .pictures_box img {
+        height: 235px;
+    }
+
+    .timeline_years .white_rectangle {
+        width: 490px;
+    }
+}
+
+@media (max-width: 667px) {
+
+    .image_box img {
+        width: 425px;
+    }
+
+    .about_text {
+        margin-top: 0px;
+    }
+
+    .about_box, .gallery_box, .link_box, .timeline_box {
+        width: 466px;
+        }
+
+    .pictures_box img {
+        height: 160px;
+    }
+
+    .timeline_years .white_rectangle {
+        width: 311px;
+    }
+}
+
+@media (max-width: 490px) {
+
+    .image_box img {
+        width: 270px;
+    }
+
+    .about_box, .gallery_box, .link_box, .timeline_box {
+        width: 290px;
+    }
+
+    .about_text {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .pictures_box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pictures_box img {
+        height: 240px;
+    }
+
+    .timeline_years .white_rectangle {
+        width: 220px;
+    }
+
+    .link_box {
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+
+    header {
+        height: 130px
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul li a {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .header_box {
+        height: 500px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .about_box, .gallery_box, .link_box, .timeline_box {
+        width: 330px;
+    }
+
+    .pictures_box img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 355px) {
+
+   .about_box, .gallery_box, .link_box, .timeline_box {
+        width: 407px;
+    }
+
+    header, footer {
+        width: 355px;
+    } 
+
+    .link_box p {
+        width: 220px;
+    }    
+
+    .copyright p {
+        width: 250px;
+        text-align: center;
+    }
+}
